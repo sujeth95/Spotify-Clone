@@ -1,5 +1,6 @@
 .border {
     border: 2px solid red;
+    margin: 3px;
 }
 
 .flex {
@@ -12,4 +13,30 @@
 
 .items-center {
     align-items: center;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.m-1 {
+    margin: 10px;
+}
+
+.p-1 {
+    padding: 10px;
 }

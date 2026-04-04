@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
 </head>
+
 <body>
-    <div class="left border"></div>
-    <div class="right border"></div>
-    <img src="logo.svg" alt="">
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="logo.svg" alt="logo"></div>
+                <ul>
+                    <li style="color:white"><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li style="color:white"><img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div style="color:white" class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img src="playlist.svg" alt="Playlist">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a href="#">Legal</a>
+                <a href="#">Safety&Privacy Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+        <div class="right border">
+
+        </div>
+    </div>
 </body>
+
 </html>
