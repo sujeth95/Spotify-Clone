@@ -46,20 +46,69 @@ body {
     width:22px;
 }
 
+.library {
+    min-height: 78vh;
+    position: relative;
+}
+
 .footer {
     display: flex;
     flex-wrap: wrap;
-    margin-top: auto;
-    gap: 2px;
+    font-size: 13px;
+    gap: 13px;
+    position: absolute;
+    bottom: 1.5em;
 }
 
 .footer a {
     text-decoration: none;
     color: #b3b3b3;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     margin: 0px 16px 0px 10px;
 }
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+.right {
+    margin: 20px 15px 20px 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C2C2C;
+    border-radius: 5px;
+}
+
+.header > * {
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spotifyPlaylists{
+    padding: 15px;
+    font-size: 12px;
+}
+
+.spotifyPlaylists .card {
+    width: 195px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: grey;
+}   
+
+.card > * {
+    padding-top: 3px;
+}
+.card img {
+    width: 100%;
+    object-fit: contain;
+    /* margin: 17px 0px 5px 0px; */
 }
