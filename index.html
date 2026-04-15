@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
+    <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
 </head>
@@ -13,7 +13,10 @@
     <div class="container flex bg-black">
         <div class="left">
             <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img class="invert" src="logo.svg" alt="logo"></div>
+                <div class="logo">
+                    <img class="invert" src="logo.svg" alt="logo">
+                    <div>Spotify</div>
+                </div>
                 <ul>
                     <li style="color:white"><img class="invert" src="home.svg" alt="home">Home</li>
                     <li style="color:white"><img class="invert" src="search.svg" alt="search">Search</li>
@@ -52,22 +55,52 @@
                     </svg>
                 </div>
                 <div class="buttons">
-                    <button>Login</button>
-                    <button>Signup</button>
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
                 </div>
             </div>
             <div class="spotifyPlaylists">
                 <h1>Spotify Playlists</h1>
                 <div class="cardContainer">
                     <div class="card">
+                        <div class="play">
+                            <img src="play.png" alt="playbtn">
+                        </div>
                         <img src="https://i.scdn.co/image/ab67616d00001e022ee6259a91835039a96dc674" alt="">
                         <h2>Ranjha</h2>
                         <p>Diljit Dosanjh, Sia, David Guetta</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <img src="play.png" alt="playbtn">
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e022ee6259a91835039a96dc674" alt="">
+                        <h2>Ranjha</h2>
+                        <p>Diljit Dosanjh, Sia, David Guetta</p>
+                    </div>
+
+                    
+
+                </div>
+                <div class="playbar">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img src="presong.svg" alt="">
+                        <img src="play.svg" alt="">
+                        <img src="nextsong.svg" alt="">
+                    </div>
+                    <div class="songtime">
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

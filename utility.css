@@ -40,3 +40,17 @@
 .p-1 {
     padding: 10px;
 }
+
+/* For Webkit browser (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #333;
+        border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #222;
+    }
