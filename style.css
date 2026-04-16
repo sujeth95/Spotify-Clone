@@ -191,7 +191,7 @@ body {
     bottom: 0;
     left: 0;
     background-color: #285A48;
-    width: 97.8%;
+    width: 98%;
     padding: 12px;
     border-radius: 10px;
 }
@@ -205,4 +205,18 @@ body {
 
 .songbuttons img {
     cursor: pointer;
+}
+
+/* .songList {
+    margin: 10px 0;
+} */
+
+.songList ul {
+    padding: 0px 34px;
+    overflow: hidden;   
+}
+
+.songList ul li{
+    list-style-type: decimal;
+    /* margin: 8px 0px; */
 }
