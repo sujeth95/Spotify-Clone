@@ -179,21 +179,21 @@ body {
     width: 72px;
 }
 
-.loginbtn:hover{
+.loginbtn:hover {
     font-weight: 700;
     font-size: 15px;
     padding: 12px;
     /* background-color: white; */
 }
 
-.playbar{
+.playbar {
     position: absolute;
     bottom: 0;
     left: 0;
     background-color: #285A48;
     width: 98%;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .songbuttons {
@@ -207,16 +207,72 @@ body {
     cursor: pointer;
 }
 
-/* .songList {
-    margin: 10px 0;
-} */
-
-.songList ul {
-    padding: 0px 34px;
-    overflow: hidden;   
+.songList {
+    height: 478px;
+    overflow: auto;
 }
 
-.songList ul li{
+.songList ul {
+    padding: 0px 0px;
+    overflow: hidden;
+}
+
+.songList ul li {
     list-style-type: decimal;
-    /* margin: 8px 0px; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 12px;
+    padding: 10px 10px;
+    border: 1px solid rgb(71, 69, 69);
+    margin: 10px 0px;
+    background-color: #252424;
+    border-radius: 9px;
+}
+
+.songList ul li img {
+    width: 24px;
+    flex-shrink: 0;
+}
+
+
+.info {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 1px 0px;
+    margin-right: auto;
+    min-width: 0;
+}
+
+.playnow {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: 12px;
+    flex-shrink: 0;
+}
+
+/* .separator {
+    height: 1px;
+    background-color: white;
+    margin: 0 14px 10px;
+} */
+
+
+.seekbar{
+    height: 0px;
+    width: 99.75%;
+    left: 0;
+    border: 2px solid grey;
+    position: absolute;
+    top: 0;
+}
+
+.circle {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -6px;
 }
