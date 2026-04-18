@@ -190,15 +190,36 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #285A48;
+    background-color: #1c342c;
     width: 98%;
     padding: 12px;
     border-radius: 0px 0px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.songinfo {
+    font-size: 14px;
+    text-align: left;
+    color: white;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.songtime {
+    font-size: 12px;
+    text-align: right;
+    color: white;
+    white-space: nowrap;
+    justify-self: end;
 }
 
 .songbuttons {
     display: flex;
-    /* flex-flow: row; */
     justify-content: center;
     gap: 10px;
 }
@@ -210,6 +231,15 @@ body {
 .songList {
     height: 478px;
     overflow: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
 }
 
 .songList ul {
@@ -252,20 +282,14 @@ body {
     flex-shrink: 0;
 }
 
-/* .separator {
-    height: 1px;
-    background-color: white;
-    margin: 0 14px 10px;
-} */
-
-
-.seekbar{
-    height: 0px;
-    width: 99.75%;
+.seekbar {
+    height: 2px;
+    width: 100%;
     left: 0;
-    border: 2px solid grey;
+    background-color: grey;
     position: absolute;
     top: 0;
+    cursor: pointer;
 }
 
 .circle {
@@ -275,4 +299,44 @@ body {
     background-color: red;
     position: absolute;
     top: -6px;
+    transition: left 0.5s;
+}
+
+.close {
+    display: none;
+}
+
+
+@media (max-width: 1242px) {
+    .left {
+        position: absolute;
+        left: -110%;
+        transition: all .3s;
+        z-index: 1;
+        width: 433px;
+        background-color: black;
+    }
+
+    .left .close {
+        position: absolute;
+        right: 10px;
+        top: 22px;
+    }
+
+    .left .close img {
+        width: 30px;
+    }
+
+    .right {
+        width: 100vw;
+        transform: translateY(8px);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .close {
+        display: block;
+    }
 }
